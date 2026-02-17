@@ -6,15 +6,12 @@
         <div class="flex items-center justify-between h-16">
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-              <span class="text-white font-bold text-xl">GLR</span>
+            <div class="w-12 h-12 bg-white border-2 border-gray-900 flex items-center justify-center">
+              <span class="text-gray-900 font-bold text-lg">GLR</span>
             </div>
             <div>
-              <div class="font-heading font-bold text-gray-900 text-lg leading-tight">
-                GLR Stagemarkt
-              </div>
-              <div class="text-xs text-gray-500">
-                Grafisch Lyceum Rotterdam
+              <div class="font-heading font-bold text-gray-900 text-lg leading-tight uppercase tracking-tight">
+                Grafisch<br>Lyceum<br>Rotterdam
               </div>
             </div>
           </NuxtLink>
@@ -41,7 +38,7 @@
             </a>
             <a
               href="#"
-              class="px-4 py-2 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 transition-colors"
+              class="px-4 py-2 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase text-sm"
             >
               Inloggen
             </a>
@@ -69,10 +66,10 @@
           <!-- About -->
           <div>
             <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-                <span class="text-white font-bold text-xl">GLR</span>
+              <div class="w-10 h-10 bg-white border-2 border-gray-300 flex items-center justify-center">
+                <span class="text-gray-900 font-bold text-lg">GLR</span>
               </div>
-              <div class="font-heading font-bold text-white text-lg">
+              <div class="font-heading font-bold text-white text-lg uppercase tracking-tight">
                 GLR Stagemarkt
               </div>
             </div>

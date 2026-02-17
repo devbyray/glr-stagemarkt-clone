@@ -27,7 +27,7 @@
         <div class="mt-8 text-center">
           <NuxtLink
             to="/"
-            class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
+            class="inline-flex items-center gap-2 text-gray-900 hover:text-gray-700 font-bold uppercase"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />

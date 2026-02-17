@@ -10,42 +10,42 @@ export default {
   theme: {
     extend: {
       colors: {
-        // GLR Brand Colors - Professional educational institution palette
+        // GLR Brand Colors - Authentic from glr.nl
         primary: {
-          50: '#e6f0ff',
-          100: '#b3d1ff',
-          200: '#80b3ff',
-          300: '#4d94ff',
-          400: '#1a75ff',
-          500: '#0056e6',  // Main GLR Blue
-          600: '#0044b3',
-          700: '#003380',
-          800: '#00224d',
-          900: '#00111a',
+          50: '#f7fce8',
+          100: '#ecf7c2',
+          200: '#dff299',
+          300: '#d2ed70',
+          400: '#c5e84f',
+          500: '#b8d430',  // Main GLR Lime Green (dominant color from website)
+          600: '#9db829',
+          700: '#7f9721',
+          800: '#62751a',
+          900: '#455312',
         },
         secondary: {
-          50: '#fff4e6',
-          100: '#ffe0b3',
-          200: '#ffcc80',
-          300: '#ffb84d',
-          400: '#ffa31a',
-          500: '#ff8f00',  // Accent Orange
-          600: '#cc7200',
-          700: '#995600',
-          800: '#663900',
-          900: '#331d00',
+          50: '#f0f0f0',
+          100: '#d9d9d9',
+          200: '#bfbfbf',
+          300: '#a6a6a6',
+          400: '#8c8c8c',
+          500: '#737373',  // Gray for subtle elements
+          600: '#595959',
+          700: '#404040',
+          800: '#262626',
+          900: '#0d0d0d',
         },
         accent: {
-          50: '#e6fff9',
-          100: '#b3ffec',
-          200: '#80ffdf',
-          300: '#4dffd2',
-          400: '#1affc5',
-          500: '#00e6ac',  // Accent Green
-          600: '#00b386',
-          700: '#008060',
-          800: '#004d3a',
-          900: '#001a14',
+          50: '#f9ffe6',
+          100: '#efffb3',
+          200: '#e3ff80',
+          300: '#d7ff4d',
+          400: '#cbff1a',
+          500: '#baed00',  // Bright Lime for banners and CTAs
+          600: '#9ac700',
+          700: '#7aa100',
+          800: '#5a7b00',
+          900: '#3a5500',
         },
       },
       fontFamily: {

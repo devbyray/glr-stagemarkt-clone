@@ -5,11 +5,11 @@
         v-model="searchQuery"
         type="text"
         placeholder="Zoek op functie, bedrijf of locatie..."
-        class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+        class="flex-1 px-4 py-3 border-2 border-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
       />
       <button
         type="submit"
-        class="px-6 py-3 bg-primary-500 text-white font-medium rounded-lg hover:bg-primary-600 transition-colors shadow-sm"
+        class="px-6 py-3 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase"
       >
         Zoeken
       </button>

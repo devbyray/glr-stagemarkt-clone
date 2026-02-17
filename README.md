@@ -49,9 +49,14 @@ pnpm run api
 
 ## 🎨 GLR Brand Kleuren
 
-- **Primary Blue**: `#0056e6` - Hoofdkleur
-- **Secondary Orange**: `#ff8f00` - Accent
-- **Accent Green**: `#00e6ac` - Highlight
+Gebaseerd op de authentieke glr.nl website:
+
+- **Primary Lime Green**: `#b8d430` - Kenmerkende lime/geel-groen kleur van GLR
+- **Black**: `#000000` - Voor tekst, knoppen en sterke accenten  
+- **White**: `#ffffff` - Voor achtergronden en contrast
+- **Bright Lime**: `#baed00` - Voor banners en call-to-actions
+
+De styling volgt het karakteristieke GLR design met felle lime-groene accenten, strakke zwarte elementen en een modern, bold typografie.
 
 ## 📝 Scripts
 
