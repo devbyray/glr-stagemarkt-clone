@@ -24,46 +24,39 @@
         </div>
 
         <!-- Vacancy Details -->
-        <div v-else-if="vacancy" class="bg-white rounded-lg shadow-sm overflow-hidden">
+        <div v-else-if="vacancy" class="bg-white overflow-hidden">
+          <!-- Image with Date Overlay -->
+          <div class="relative aspect-[16/9] overflow-hidden">
+            <img 
+              :src="vacancy.image" 
+              :alt="vacancy.title"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-6 right-6 bg-black text-white px-4 py-2 text-sm font-bold uppercase">
+              {{ formatDateShort(vacancy.postedDate) }}
+            </div>
+          </div>
+          
           <!-- Header -->
           <div class="bg-primary-500 text-gray-900 p-8">
-            <h1 class="text-4xl md:text-5xl font-heading font-extrabold mb-4 uppercase tracking-tight">
+            <h1 class="text-4xl md:text-5xl font-black mb-4 uppercase tracking-tight leading-tight">
               {{ vacancy.title }}
             </h1>
-            <div class="flex flex-wrap gap-4 text-lg">
-              <span class="flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                {{ vacancy.company }}
-              </span>
-              <span class="flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                {{ vacancy.location }}
-              </span>
+            <div class="flex flex-wrap gap-6 text-lg font-bold">
+              <span>{{ vacancy.company }}</span>
+              <span>•</span>
+              <span>{{ vacancy.location }}</span>
             </div>
           </div>
 
           <!-- Content -->
-          <div class="p-8">
-            <div class="mb-6">
-              <div class="flex items-center gap-2 text-sm text-gray-500 mb-6">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                Geplaatst op {{ formatDate(vacancy.postedDate) }}
-              </div>
-
-              <h2 class="text-2xl font-bold text-gray-900 mb-4">
-                Over deze stage
-              </h2>
-              <p class="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
-                {{ vacancy.description }}
-              </p>
-            </div>
+          <div class="p-8 md:p-12">
+            <h2 class="text-3xl font-black uppercase text-gray-900 mb-6">
+              Over deze stage
+            </h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-8">
+              {{ vacancy.description }}
+            </p>
 
             <!-- Call to Action -->
             <div class="border-t pt-6">
@@ -75,21 +68,21 @@
               </p>
               <div class="flex flex-wrap gap-4">
                 <button
-                  class="px-8 py-3 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase"
+                  class="px-8 py-2 border-gray-200 pt-8">
+              <h3 class="text-2xl font-black uppercase text-gray-900 mb-4">
+                Interesse?
+              </h3>
+              <p class="text-gray-600 mb-6 text-lg">
+                Neem contact op met {{ vacancy.company }} voor meer informatie of om te solliciteren.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <button
+                  class="px-8 py-4 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase text-sm"
                 >
                   Solliciteer nu
                 </button>
                 <button
-                  class="px-8 py-3 border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-100 transition-colors uppercase"
-                >
-                  Bewaar vacature
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Back Button -->
+                  class="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-100 transition-colors uppercase text-sm
         <div class="mt-8">
           <button
             @click="goBack"
@@ -135,7 +128,10 @@ const formatDate = (dateString) => {
   })
 }
 
-const goBack = () => {
-  router.back()
-}
-</script>
+const goBack = (Short = (dateString) => {
+  const date = new Date(dateString)
+  const day = date.getDate()
+  const months = ['JANUARI', 'FEBRUARI', 'MAART', 'APRIL', 'MEI', 'JUNI', 'JULI', 'AUGUSTUS', 'SEPTEMBER', 'OKTOBER', 'NOVEMBER', 'DECEMBER']
+  const month = months[date.getMonth()]
+  const year = date.getFullYear()
+  return `${day} ${month} ${year}`

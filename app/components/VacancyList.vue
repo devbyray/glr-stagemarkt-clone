@@ -13,7 +13,7 @@
       <p class="text-gray-600">Probeer een andere zoekopdracht of filter</p>
     </div>
 
-    <div v-else class="grid gap-4">
+    <div v-else class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <VacancyCard
         v-for="vacancy in vacancies"
         :key="vacancy.id"
