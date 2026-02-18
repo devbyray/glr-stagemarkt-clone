@@ -70,9 +70,6 @@
                 <button class="px-8 py-4 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase text-sm">
                   Solliciteer nu
                 </button>
-                <button class="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-100 transition-colors uppercase text-sm">
-                  Bewaar vacature
-                </button>
               </div>
             </div>
           </div>
