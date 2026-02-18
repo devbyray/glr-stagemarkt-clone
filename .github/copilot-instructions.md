@@ -30,17 +30,18 @@ This repository contains guidelines and best practices for using GitHub Copilot 
 
 Language and framework-specific guidelines that load only when relevant:
 
-- **JavaScript/TypeScript** - [javascript-typescript-standards](skills/javascript-typescript-standards/)
-- **Vue.js** - [vue-development](skills/vue-development/)
-- **Nuxt.js** - [nuxt-development](skills/nuxt-development/)
-- **CSS** - [css-standards](skills/css-standards/)
-- **Tailwind CSS** - [tailwind-css](skills/tailwind-css/)
-- **HTML** - [html-standards](skills/html-standards/)
-- **C#** - [csharp-standards](skills/csharp-standards/)
-- **.NET** - [dotnet-development](skills/dotnet-development/)
-- **Markdown** - [markdown-standards](skills/markdown-standards/)
-- **Testing & TDD** - [testing-tdd](skills/testing-tdd/)
 - **Commit Messages** - [commit-conventions](skills/commit-conventions/)
+- **CSS** - [css-standards](skills/css-standards/)
+- **HTML** - [html-standards](skills/html-standards/)
+- **JavaScript/TypeScript** - [javascript-typescript-standards](skills/javascript-typescript-standards/)
+- **Markdown** - [markdown-standards](skills/markdown-standards/)
+- **Nuxt.js** - [nuxt-development](skills/nuxt-development/)
+- **Project Management** - [project-management](skills/project-management/)
+- **Tailwind CSS** - [tailwind-css](skills/tailwind-css/)
+- **Tailwind CSS Accessibility** - [tailwindcss-accessibility](skills/tailwindcss-accessibility/)
+- **Testing & TDD** - [testing-tdd](skills/testing-tdd/)
+- **Vue.js** - [vue-development](skills/vue-development/)
+- **Web Design Guidelines** - [web-design-guidelines](skills/web-design-guidelines/)
 
 [📖 Learn more about Agent Skills](skills/README.md)
 
