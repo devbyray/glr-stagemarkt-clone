@@ -51,7 +51,7 @@ pnpm run api
 
 Gebaseerd op de authentieke glr.nl website:
 
-- **Primary Lime Green**: `#b8d430` - Kenmerkende lime/geel-groen kleur van GLR
+- **Primary Lime Green**: `#8fe507` - Officiële GLR lime-groene kleur
 - **Black**: `#000000` - Voor tekst, knoppen en sterke accenten  
 - **White**: `#ffffff` - Voor achtergronden en contrast
 - **Bright Lime**: `#baed00` - Voor banners en call-to-actions

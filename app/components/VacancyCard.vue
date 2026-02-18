@@ -1,31 +1,31 @@
 <template>
   <NuxtLink
     :to="`/vacancies/${vacancy.id}`"
-    class="block bg-white overflow-hidden hover:shadow-xl transition-shadow duration-300"
+    class="block bg-gray-200 hover:bg-black hover:text-white overflow-hidden hover:shadow-xl transition duration-300"
   >
     <!-- Image with Date Overlay -->
-    <div class="relative aspect-[4/3] overflow-hidden">
+    <div class="relative aspect-[4/3]">
       <img 
         :src="vacancy.image" 
         :alt="vacancy.title"
         class="w-full h-full object-cover"
       />
-      <div class="absolute top-4 right-4 bg-black text-white px-3 py-1.5 text-xs font-bold uppercase">
+      <div class="absolute -bottom-4 right-0 bg-black text-white px-3 py-1.5 text-xs font-bold uppercase">
         {{ formatDate(vacancy.postedDate) }}
       </div>
     </div>
     
     <!-- Content -->
     <div class="p-6">
-      <h3 class="text-2xl font-black uppercase text-gray-900 mb-3 leading-tight">
+      <h3 class="text-2xl font-black uppercase  mb-3 leading-tight">
         {{ vacancy.title }}
       </h3>
       
-      <p class="text-gray-700 mb-3 line-clamp-3">
+      <p class=" mb-3 line-clamp-3">
         {{ vacancy.description }}
       </p>
       
-      <div class="text-sm text-gray-600">
+      <div class="text-sm ">
         {{ vacancy.company }} • {{ vacancy.location }}
       </div>
     </div>

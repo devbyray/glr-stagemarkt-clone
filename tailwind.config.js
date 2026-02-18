@@ -12,16 +12,16 @@ export default {
       colors: {
         // GLR Brand Colors - Authentic from glr.nl
         primary: {
-          50: '#f7fce8',
-          100: '#ecf7c2',
-          200: '#dff299',
-          300: '#d2ed70',
-          400: '#c5e84f',
-          500: '#b8d430',  // Main GLR Lime Green (dominant color from website)
-          600: '#9db829',
-          700: '#7f9721',
-          800: '#62751a',
-          900: '#455312',
+          50: '#f4ffe5',
+          100: '#e5ffb3',
+          200: '#d5ff80',
+          300: '#c5ff4d',
+          400: '#b5ff1a',
+          500: '#8fe507',  // Main GLR Lime Green (officiële GLR kleur)
+          600: '#75be06',
+          700: '#5b9604',
+          800: '#416f03',
+          900: '#274701',
         },
         secondary: {
           50: '#f0f0f0',

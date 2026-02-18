@@ -3,17 +3,14 @@
     <!-- Header -->
     <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-end h-16 relative px-8">
           <!-- Logo -->
-          <NuxtLink to="/" class="flex items-center gap-3">
-            <div class="w-12 h-12 bg-white border-2 border-gray-900 flex items-center justify-center">
-              <span class="text-gray-900 font-bold text-lg">GLR</span>
-            </div>
-            <div>
-              <div class="font-heading font-bold text-gray-900 text-lg leading-tight uppercase tracking-tight">
-                Grafisch<br>Lyceum<br>Rotterdam
-              </div>
-            </div>
+          <NuxtLink to="/" class="flex absolute left-10 top-4 items-center">
+            <img 
+              src="/images/glr-logo.png" 
+              alt="Grafisch Lyceum Rotterdam" 
+              class="h-28 shadow-sm"
+            />
           </NuxtLink>
 
           <!-- Navigation -->
@@ -65,13 +62,12 @@
         <div class="grid md:grid-cols-4 gap-8">
           <!-- About -->
           <div>
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-10 h-10 bg-white border-2 border-gray-300 flex items-center justify-center">
-                <span class="text-gray-900 font-bold text-lg">GLR</span>
-              </div>
-              <div class="font-heading font-bold text-white text-lg uppercase tracking-tight">
-                GLR Stagemarkt
-              </div>
+            <div class="mb-4">
+              <img 
+                src="/images/glr-logo.png" 
+                alt="Grafisch Lyceum Rotterdam" 
+                class="h-12"
+              />
             </div>
             <p class="text-sm text-gray-400">
               Dé plek voor MBO studenten om hun perfecte stage te vinden bij topbedrijven.

@@ -26,7 +26,7 @@
         <!-- Vacancy Details -->
         <div v-else-if="vacancy" class="bg-white overflow-hidden">
           <!-- Image with Date Overlay -->
-          <div class="relative aspect-[16/9] overflow-hidden">
+          <div class="relative w-full h-96 overflow-hidden">
             <img 
               :src="vacancy.image" 
               :alt="vacancy.title"
@@ -59,16 +59,7 @@
             </p>
 
             <!-- Call to Action -->
-            <div class="border-t pt-6">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">
-                Interesse?
-              </h3>
-              <p class="text-gray-600 mb-6">
-                Neem contact op met {{ vacancy.company }} voor meer informatie of om te solliciteren.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <button
-                  class="px-8 py-2 border-gray-200 pt-8">
+            <div class="border-t-2 border-gray-200 pt-8">
               <h3 class="text-2xl font-black uppercase text-gray-900 mb-4">
                 Interesse?
               </h3>
@@ -76,13 +67,18 @@
                 Neem contact op met {{ vacancy.company }} voor meer informatie of om te solliciteren.
               </p>
               <div class="flex flex-wrap gap-4">
-                <button
-                  class="px-8 py-4 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase text-sm"
-                >
+                <button class="px-8 py-4 bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors uppercase text-sm">
                   Solliciteer nu
                 </button>
-                <button
-                  class="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-100 transition-colors uppercase text-sm
+                <button class="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold hover:bg-gray-100 transition-colors uppercase text-sm">
+                  Bewaar vacature
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back Button -->
         <div class="mt-8">
           <button
             @click="goBack"
@@ -119,19 +115,16 @@ onMounted(async () => {
   loading.value = false
 })
 
-const formatDate = (dateString) => {
-  const date = new Date(dateString)
-  return date.toLocaleDateString('nl-NL', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
-  })
-}
-
-const goBack = (Short = (dateString) => {
+const formatDateShort = (dateString) => {
   const date = new Date(dateString)
   const day = date.getDate()
   const months = ['JANUARI', 'FEBRUARI', 'MAART', 'APRIL', 'MEI', 'JUNI', 'JULI', 'AUGUSTUS', 'SEPTEMBER', 'OKTOBER', 'NOVEMBER', 'DECEMBER']
   const month = months[date.getMonth()]
   const year = date.getFullYear()
   return `${day} ${month} ${year}`
+}
+
+const goBack = () => {
+  router.back()
+}
+</script>
