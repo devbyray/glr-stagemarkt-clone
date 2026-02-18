@@ -9,7 +9,7 @@
             <img 
               src="/images/glr-logo.png" 
               alt="Grafisch Lyceum Rotterdam" 
-              class="h-28 shadow-sm"
+              class="h-28"
             />
           </NuxtLink>
 
