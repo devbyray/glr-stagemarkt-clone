@@ -2,6 +2,9 @@
 
 Een moderne vacature website voor MBO studenten, gebouwd met Nuxt.js, Tailwind CSS en JSON-server. Geïnspireerd door Stagemarkt.nl met de visuele stijl van het Grafisch Lyceum Rotterdam.
 
+## Design
+Het design is te vinden op [DesignPot](https://design.penpot.app/#/view?file-id=429aa6c1-d613-816d-8007-9757a31a90a3&page-id=429aa6c1-d613-816d-8007-9757a31a90a4&section=inspect&index=0&share-id=dd30d345-3fda-8112-8007-976ef5653b91)
+
 ## ✨ Features
 
 - 🔍 **Zoekfunctionaliteit** - Zoek vacatures op functie, bedrijf, locatie of beschrijving
