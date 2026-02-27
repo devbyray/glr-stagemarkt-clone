@@ -2,6 +2,8 @@
 
 ![GLR Stagemarkt](./homepage.png)
 
+**🌐 Live demo: [https://glr-stagemarkt-clone.vercel.app/](https://glr-stagemarkt-clone.vercel.app/)**
+
 Een moderne vacature website voor MBO studenten, gebouwd met Nuxt.js en Tailwind CSS. Geïnspireerd door Stagemarkt.nl met de visuele stijl van het Grafisch Lyceum Rotterdam.
 
 > *Deze applicatie is ontwikkeld als onderdeel van een gastles voor het [Grafisch Lyceum Rotterdam](https://glr.nl) door [SBB](https://s-bb.nl). Design gemaakt in [PenPot](https://design.penpot.app/#/view?file-id=429aa6c1-d613-816d-8007-9757a31a90a3&page-id=429aa6c1-d613-816d-8007-9757a31a90a4&section=interactions&index=0&share-id=dd30d345-3fda-8112-8007-976ef5653b91)*
