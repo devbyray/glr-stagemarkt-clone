@@ -151,7 +151,7 @@
 
         <!-- Copyright -->
         <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>© {{ new Date().getFullYear() }} GLR Stagemarkt - Grafisch Lyceum Rotterdam. Alle rechten voorbehouden.</p>
+          <p>{{ new Date().getFullYear() }} GLR Stagemarkt - Code staat op <a href="https://github.com/devbyray/glr-stagemarkt-clone" class="hover:text-white transition-colors">GitHub</a>.</p>
         </div>
       </div>
     </footer>
