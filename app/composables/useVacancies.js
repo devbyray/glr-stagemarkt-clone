@@ -1,12 +1,10 @@
 export const useVacancies = () => {
-  const API_URL = 'http://localhost:3001'
-
   /**
    * Fetch all vacancies from the API
    */
   const getAllVacancies = async () => {
     try {
-      const data = await $fetch(`${API_URL}/vacatures`)
+      const data = await $fetch('/api/vacatures')
       return data
     } catch (error) {
       console.error('Error fetching vacancies:', error)
@@ -24,7 +22,7 @@ export const useVacancies = () => {
     }
 
     try {
-      const allVacancies = await $fetch(`${API_URL}/vacatures`)
+      const allVacancies = await $fetch('/api/vacatures')
       const searchTerm = query.toLowerCase()
       
       return allVacancies.filter(vacancy => {
@@ -46,7 +44,7 @@ export const useVacancies = () => {
    */
   const getVacancyById = async (id) => {
     try {
-      const data = await $fetch(`${API_URL}/vacatures/${id}`)
+      const data = await $fetch(`/api/vacatures/${id}`)
       return data
     } catch (error) {
       console.error('Error fetching vacancy:', error)

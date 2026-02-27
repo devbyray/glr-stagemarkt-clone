@@ -5,20 +5,14 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "dev:all": "concurrently \"pnpm run dev\" \"pnpm run api\" --names \"nuxt,api\" --prefix-colors \"blue,green\"",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "api": "json-server --watch server/db.json --port 3001"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "6.14.0",
     "nuxt": "^4.3.1",
     "vue": "^3.5.28",
     "vue-router": "^4.6.4"
-  },
-  "devDependencies": {
-    "concurrently": "9.2.1",
-    "json-server": "1.0.0-beta.6"
   }
 }
