@@ -17,12 +17,41 @@ Een moderne vacature website voor MBO studenten, gebouwd met Nuxt.js en Tailwind
 - 🚀 **Vercel Ready** - API endpoints in Nuxt voor eenvoudige deployment
 - 📘 **TypeScript** - Volledige type safety van API tot frontend
 
-## 🚀 Quick Start
+## 📦 Installatie
 
-### Start de applicatie
+Voordat je begint, heb je een aantal tools nodig:
+
+### Vereisten
+
+1. **Git** - Om het project te downloaden
+   - 📘 [Installatie instructies voor Git](docs/installatie-git.md)
+
+2. **Node.js** - Om de applicatie te draaien (npm komt automatisch mee!)
+   - 📘 [Installatie instructies voor Node.js](docs/installatie-nodejs.md)
+
+### Project installeren
+
+Als je Git en Node.js hebt geïnstalleerd:
 
 ```bash
-pnpm run dev
+# 1. Clone het project
+git clone https://github.com/JOUW-USERNAME/glr-stagemarkt-clone.git
+
+# 2. Ga naar de project folder
+cd glr-stagemarkt-clone
+
+# 3. Installeer dependencies
+npm install
+```
+
+Dit kan 1-2 minuten duren. ⏱️
+
+## 🚀 Start de applicatie
+
+Als alles geïnstalleerd is, start je de development server:
+
+```bash
+npm run dev
 ```
 
 De applicatie is nu beschikbaar op:
@@ -43,6 +72,9 @@ De applicatie is nu beschikbaar op:
 │   ├── api/vacatures/     # Nuxt API endpoints (TypeScript)
 │   ├── data.ts            # Vacatures data (18 stageplekken)
 │   └── types.ts           # TypeScript interfaces (Vacancy)
+├── docs/
+│   ├── installatie-git.md     # Git installatie instructies
+│   └── installatie-nodejs.md  # Node.js installatie
 └── tailwind.config.js     # GLR brand kleuren
 ```
 
@@ -60,10 +92,10 @@ De styling volgt het karakteristieke GLR design met felle lime-groene accenten, 
 ## 📝 Scripts
 
 ```bash
-pnpm run dev        # Start development server
-pnpm run build      # Build voor productie
-pnpm run generate   # Generate static site
-pnpm run preview    # Preview production build
+npm run dev        # Start development server
+npm run build      # Build voor productie
+npm run generate   # Generate static site
+npm run preview    # Preview production build
 ```
 
 ## 🛠️ Tech Stack
@@ -83,6 +115,50 @@ De applicatie is klaar voor deployment op Vercel:
 4. Deploy! 🚀
 
 De API endpoints (`/api/vacatures`) werken automatisch op Vercel als serverless functions.
+
+## 🔧 Veelvoorkomende problemen
+
+### ❌ "npm: command not found" of "'npm' is not recognized"
+
+**Oplossing:** Node.js is niet correct geïnstalleerd. Herinstalleer Node.js via de [installatie instructies](docs/installatie-nodejs.md).
+
+### ❌ "Port 3000 is already in use"
+
+**Oplossing:** Er draait al iets op port 3000. Stop dat programma of gebruik een andere port:
+```bash
+PORT=3001 npm run dev
+```
+
+**Windows (PowerShell):**
+```powershell
+$env:PORT=3001; npm run dev
+```
+
+### ❌ Problemen met `npm install`
+
+**Oplossing 1:** Verwijder `node_modules` en probeer opnieuw:
+```bash
+# Windows
+rmdir /s node_modules
+npm install
+
+# macOS/Linux
+rm -rf node_modules
+npm install
+```
+
+**Oplossing 2:** Gebruik een oudere Node.js versie (v18 LTS) als v20 problemen geeft.
+
+### ❌ De pagina laadt niet of blijft leeg
+
+**Oplossing:** 
+1. Check of de server draait (je zou `✓ Nuxt ready` moeten zien in je terminal)
+2. Probeer de browser cache te legen (Ctrl+Shift+R of Cmd+Shift+R)
+3. Open http://localhost:3000 in een incognito/privé venster
+
+### 💡 Hulp nodig?
+
+Kom naar de docent of klassgenoot! Samen kom je er altijd uit. 🤝
 
 ---
 
