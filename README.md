@@ -15,6 +15,7 @@ Een moderne vacature website voor MBO studenten, gebouwd met Nuxt.js en Tailwind
 - 📱 **Responsive** - Werkt perfect op desktop, tablet en mobiel
 - ⚡ **Snel & Modern** - Gebouwd met Nuxt 4 en Vue 3
 - 🚀 **Vercel Ready** - API endpoints in Nuxt voor eenvoudige deployment
+- 📘 **TypeScript** - Volledige type safety van API tot frontend
 
 ## 🚀 Quick Start
 
@@ -33,29 +34,33 @@ De applicatie is nu beschikbaar op:
 ## 📁 Project Structuur
 
 ```
-├── components/          # Vue componenten (SearchBar, VacancyCard, etc)
-├── composables/         # API logic (useVacancies)
-├── layouts/            # Page layouts met header/footer
-├── pages/              # Route pages (index, search, detail)
-├── server/db.json      # JSON database met 18 vacatures
-└── tailwind.config.js  # GLR brand kleuren
+├── app/
+│   ├── components/         # Vue componenten (SearchBar, VacancyCard, etc)
+│   ├── composables/        # API logic (useVacancies.ts) met TypeScript
+│   ├── layouts/           # Page layouts met header/footer
+│   └── pages/             # Route pages (index, search, detail)
+├── server/
+│   ├── api/vacatures/     # Nuxt API endpoints (TypeScript)
+│   ├── data.ts            # Vacatures data (18 stageplekken)
+│   └── types.ts           # TypeScript interfaces (Vacancy)
+└── tailwind.config.js     # GLR brand kleuren
 ```
 
 ## 🎨 GLR Brand Kleuren
 
-Gebaapp/
-│   ├── components/          # Vue componenten (SearchBar, VacancyCard, etc)
-│   ├── composables/         # API logic (useVacancies)
-│   ├── layouts/            # Page layouts met header/footer
-│   └── pages/              # Route pages (index, search, detail)
-├── server/
-│   ├── api/vacatures/      # Nuxt API endpoints
-│   └── db.json             # JSON database met 18 vacatures
-└── tailwind.config.js    aed00` - Voor banners en call-to-actions
+Gebaseerd op de authentieke glr.nl website:
+
+- **Primary Lime Green**: `#8fe507` - Officiële GLR lime-groene kleur
+- **Black**: `#000000` - Voor tekst, knoppen en sterke accenten  
+- **White**: `#ffffff` - Voor achtergronden en contrast
+- **Bright Lime**: `#baed00` - Voor banners en call-to-actions
 
 De styling volgt het karakteristieke GLR design met felle lime-groene accenten, strakke zwarte elementen en een modern, bold typografie.
 
-## 📝 Script        # Start development server
+## 📝 Scripts
+
+```bash
+pnpm run dev        # Start development server
 pnpm run build      # Build voor productie
 pnpm run generate   # Generate static site
 pnpm run preview    # Preview production build
@@ -77,12 +82,10 @@ De applicatie is klaar voor deployment op Vercel:
 3. Vercel detecteert automatisch de Nuxt configuratie
 4. Deploy! 🚀
 
-De API endpoints (`/api/vacatures`) werken automatisch op Vercel als serverless functions.(Vue 3)
-- Tailwind CSS 3
-- JSON-server
-- TypeScript
+De API endpoints (`/api/vacatures`) werken automatisch op Vercel als serverless functions.
 
 ---
 
 **Made for GLR students** ❤️
+
 
